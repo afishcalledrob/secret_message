@@ -1,0 +1,18 @@
+<h1>Secret Message</h1>
+<label>
+        Message:<br><%= @secret_message.message_generator %>
+</label>
+<br>
+<h2>Multiple Choice Question:</h2>
+<h3>What is the answer to the ultimate question of life, the universe and everything?</h3>
+<h3>a) 40</h3>
+<h3>b) 41</h3>
+<h3>c) 42</h3>
+<h3>d) 43</h3>
+<form action="/decryption" method="post">
+    <label for='answer'>
+        Please enter numerical answer here:
+    <input type='text' name='answer'>
+    </label>
+    <input type='submit' value='Submit'>
+</form>
